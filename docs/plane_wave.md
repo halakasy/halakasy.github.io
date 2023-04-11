@@ -1,6 +1,6 @@
 # Плоская волна
 Уравнения Максвелла:
-
+srh
 $$
 \begin{aligned}
 \nabla\times\vec{H} & =\epsilon_0 \frac{\partial \vec{E}}{\partial t} \\
