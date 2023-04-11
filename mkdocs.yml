@@ -1,4 +1,4 @@
-site_name: halakasy
+site_name: Halakasy
 site_url: https://halakasy.github.io/
 nav:
   - index.md
@@ -13,7 +13,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 theme:
-  name: readthedocs
+  name: material
 
 plugins: 
   - search
@@ -24,4 +24,4 @@ plugins:
         ru:
           name: Russian
           build: true
-          site_name: "Волны"
+          site_name: "Halakasy"
