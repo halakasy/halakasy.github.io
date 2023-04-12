@@ -28,11 +28,11 @@ theme:
 
 plugins: 
   - search
-  - i18n:
-      docs_structure: suffix
-      default_language: ru
-      languages:
-        ru:
-          name: Russian
-          build: true
-          site_name: "Halakasy"
+#  - i18n:
+#      docs_structure: suffix
+#      default_language: ru
+#      languages:
+#        ru:
+#          name: Russian
+#          build: true
+#          site_name: "Halakasy"
