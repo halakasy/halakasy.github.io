@@ -5,8 +5,7 @@ nav:
   - plane_wave.md
   - current_density.md
 markdown_extensions: #https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#mkdocsyml
-  - pymdownx.arithmatex:
-      generic: true
+  - pymdownx.arithmatex
   - def_list
   - pymdownx.magiclink # auto-link HTML, FTP, and email links https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
   - pymdownx.keys # add keys like ++ctrl+alt+delete++ # https://facelessuser.github.io/pymdown-extensions/extensions/keys/
@@ -25,7 +24,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 theme:
-  name: material
+  name: mkdocs
 
 plugins: 
   - search
