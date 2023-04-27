@@ -9,8 +9,8 @@
 	\begin{figure}
 	\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth, rotate around x=-90, rotate around y=-0, rotate around z=5]
 		% The axes
-		\draw[color=gray,->] (xyz cs:x=0) -- (xyz cs:x=8.5) node[above] {$x$};
-		\draw[color=gray,->] (xyz cs:y=0) -- (xyz cs:y=8.5) node[above] {$y$};
+		\draw[color=gray,->] (xyz cs:x=0) -- (xyz cs:x=8.5) node[above] {$y$};
+		\draw[color=gray,->] (xyz cs:y=0) -- (xyz cs:y=8.5) node[above] {$x$};
 		\draw[color=gray,->] (xyz cs:z=0) -- (xyz cs:z=8.5) node[above] {$z$};
 		
 		% The thin ticks
@@ -24,7 +24,7 @@
 		\coordinate (S0) at (0,7,4);
 		\coordinate (L) at (5.5,2.5,0);
 		\coordinate (Q) at (2.5,2.5,5);
-		\coordinate (Q0) at (4,0,6);
+		\coordinate (Q0) at (3,0,6);
 		\coordinate (ooo) at (0,0,0);
 		\coordinate (xoo) at (5,0,0);
 		\coordinate (xyo) at (5,5,0);
@@ -54,13 +54,13 @@
 		\draw[thick] (S0) -- (S);
 		\node[label={left:$\Delta S$}] at (S0) {};
 		\draw[thick,->] (Q0) -- (Q);
-		\node[label={right:$\Delta Q = \rho_v \Delta V$}] at (Q0) {};
-
+		%\node[label={right:$\Delta Q = \rho_v \Delta V$}] at (Q0) {};
+		\node[label={above right:$\Delta Q = q_e  N_e \Delta V$}] at (Q0) {};
 	\end{tikzpicture}
 	\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth, rotate around x=-90, rotate around y=-0, rotate around z=5]
 	% The axes
-	\draw[color=gray,->] (xyz cs:x=0) -- (xyz cs:x=8.5) node[above] {$x$};
-	\draw[color=gray,->] (xyz cs:y=0) -- (xyz cs:y=8.5) node[above] {$y$};
+	\draw[color=gray,->] (xyz cs:x=0) -- (xyz cs:x=8.5) node[above] {$y$};
+	\draw[color=gray,->] (xyz cs:y=0) -- (xyz cs:y=8.5) node[above] {$x$};
 	\draw[color=gray,->] (xyz cs:z=0) -- (xyz cs:z=8.5) node[above] {$z$};
 	
 	% The thin ticks
@@ -74,7 +74,7 @@
 	\coordinate (S0) at (0,9,4);
 	\coordinate (L) at (5.5,4.5,0);
 	\coordinate (Q) at (2.5,4.5,5);
-	\coordinate (Q0) at (4,0,6);
+	\coordinate (Q0) at (3,0,6);
 	\coordinate (dy) at (5.5,1.5,0);
 	
 	
@@ -112,8 +112,9 @@
 	\draw[thick] (S0) -- (S);
 	\node[label={left:$\Delta S$}] at (S0) {};
 	\draw[thick,->] (Q0) -- (Q);
-	\node[label={right:$\Delta Q = \rho_v \Delta V$}] at (Q0) {};
-	\node[label={right:$\Delta y$}] at (dy) {};
+	%\node[label={right:$\Delta Q = \rho_v \Delta V$}] at (Q0) {};
+	\node[label={above right:$\Delta Q = q_e  N_e \Delta V$}] at (Q0) {};
+	\node[label={right:$\Delta x$}] at (dy) {};
 \end{tikzpicture}
 	\end{figure}
 
