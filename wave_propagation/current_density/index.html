@@ -88,30 +88,30 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="_1">Плотность тока</h1>
-<p>Электрические заряды, находящиеся в движении, формируют <em>электрический ток</em>.</p>
-<p><em>Электрическим током</em> называется всякое упорядоченное движение электрических зарядов в пространстве. </p>
-<p><em>Силой тока</em> сквозь некоторую поверхность <span class="arithmatex">\(S\)</span> называется скалярная величина <span class="arithmatex">\(I\)</span>, равная первой производной по времени от заряда <span class="arithmatex">\(Q\)</span>, проходящего через эту поверхность: </p>
+<p>Электрические заряды, находящиеся в движении, формируют <em>электрический ток</em>.
+Если формально, <em>электрическим током</em> называется всякое упорядоченное движение электрических зарядов в пространстве.
+Одной из характеристик электрического тока является <em>сила тока</em>.
+<em>Силой тока</em> сквозь некоторую поверхность <span class="arithmatex">\(S\)</span> называется скалярная величина <span class="arithmatex">\(I\)</span>, равная первой производной по времени от заряда <span class="arithmatex">\(Q\)</span>, проходящего через эту поверхность: </p>
 <div class="arithmatex">\[I=\frac{dQ}{dt}\]</div>
-<p>Другими словами, сила тока показывает скорость перемещения заряда через заданную точку или плоскость. Единица измерения силы тока - Ампер. Один Ампер равен количеству заряда (Кулон, <em>Кл</em>), протекающему через заданную точку за единицу времени (секунда, <em>с</em>).
-При рассмотрении распространения волн в среде с токами удобнее , </p>
-<!---
-Поскольку в выражении для силы тока заряд $Q$ - положительная величина
---->
-<p>Рассматривая поля, интерес представляет </p>
-<p>Распределение электрического тока по сечению <span class="arithmatex">\(S\)</span> характеризуется <em>вектором плотности тока</em> <span class="arithmatex">\(\vec{J}\)</span></p>
+<p>Единица измерения силы тока - Ампер. Один Ампер равен количеству заряда (Кулон, <em>Кл</em>), протекающему через заданную поверхность за единицу времени (секунда, <em>с</em>).</p>
+<p>В теории поля обычно интерес представляют процессы, протекающие в точке, а не в пределах некоторой большой области пространства.
+В этом случае удобно использовать другую, векторную характеристику электрического тока - <em>плотность электрического тока</em>.
+Вектор <em>плотности электрического тока</em> <span class="arithmatex">\(\vec{J}\)</span> характеризует распределение электрического тока по сечению <span class="arithmatex">\(S\)</span>.</p>
+<p>Приращение тока <span class="arithmatex">\(\Delta I\)</span>, пересекающего поверхность через бесконечно малый элемент поверхности <span class="arithmatex">\(\Delta S\)</span>, нормальный к плотности тока, равно:
+<span class="arithmatex">\(<span class="arithmatex">\(\Delta I=J_N \Delta S\)</span>\)</span>
+Если вектор плотности тока ориентирован под углом к элементу поверхности, то силу тока можно найти скалярно перемножив векторы <span class="arithmatex">\(\vec{J}\)</span> и <span class="arithmatex">\(\vec{S}\)</span>:
+<span class="arithmatex">\(<span class="arithmatex">\(\Delta I=\vec{J_N} \cdot \vec{\Delta S}\)</span>\)</span></p>
+<blockquote>
+<p>Вектор $ \vec{S} $ направлен в ту же сторону, что и нормаль к той плоскости, которая является касательной к поверхности в рассматриваемой точке. Конечно, существуют две такие нормали. Мы будем рассматривать внешнюю нормаль, если не указано иное.</p>
+</blockquote>
+<p>Напомним, что скалярное произведение равно произведению модулей двух векторов и косинусу угла между этими векторами. Таким образом, если между векторами <span class="arithmatex">\(\vec{J}\)</span> и <span class="arithmatex">\(\vec{S}\)</span> угол <span class="arithmatex">\(90^\circ\)</span>, то ток через такую поверхность равен нулю.</p>
+<p>Полный ток будет равен интегралу вектора <span class="arithmatex">\(\vec{J}\)</span> по поверхности <span class="arithmatex">\(S\)</span>:</p>
+<div class="arithmatex">\[I=\int_{S} \vec{J} \cdot \partial\vec{S}\]</div>
 <p><img alt="alt text" src="../../pics/plot.png" title="Title" /></p>
-<table>
-<thead>
-<tr>
-<th align="center"><img alt="" src="../../pics/plot.png" /></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><em>An increment of charge, <span class="arithmatex">\(\Delta Q = \rho_v \Delta S \Delta L\)</span>, which moves a distance <span class="arithmatex">\(\Delta x\)</span> in a time <span class="arithmatex">\(\Delta t\)</span>, produces a component of current density in the limit of <span class="arithmatex">\(J_x=\rho_v \upsilon_x\)</span></em></td>
-</tr>
-</tbody>
-</table>
+<p><em>An increment of charge, <span class="arithmatex">\(\Delta Q= \rho_v  \Delta S \Delta L\)</span>, which moves a distance <span class="arithmatex">\(\Delta x\)</span> in a time <span class="arithmatex">\(\Delta t\)</span>, produces a component of current density in the limit of <span class="arithmatex">\(J_x=\rho_v \upsilon_x\)</span></em></p>
+<p>Electric current density refers to the amount of electric current flowing through a given area. It is a measure of the concentration of electric charge flowing through a material. Mathematically, electric current density is defined as the electric current per unit area of a cross-section of the material. Its SI unit is amperes per square meter (A/m²).</p>
+<p>When an electric field is applied to a material, the electrons within the material are set into motion, and they start to flow in a certain direction. The flow of these electrons constitutes an electric current. The current density describes how concentrated this flow is within the material.</p>
+<p>Electric current density is a critical parameter in electrical engineering and physics, as it plays a fundamental role in various electrical devices and applications. For instance, it is used in designing electrical conductors, transformers, motors, and other electrical components.</p>
               
             </div>
           </div><footer>
