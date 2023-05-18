@@ -83,61 +83,47 @@
 Одной из характеристик электрического тока является <strong>сила тока</strong>.
 <strong>Силой тока</strong> сквозь некоторую поверхность <span class="arithmatex">\(S\)</span> называется скалярная величина <span class="arithmatex">\(I\)</span>, равная первой производной по времени от заряда <span class="arithmatex">\(Q\)</span>, проходящего через эту поверхность: </p>
 <div class="arithmatex">\[
-\begin{equation}
 I=\frac{dQ}{dt}
-\end{equation}
 \]</div>
 <p>Единица измерения силы тока - Ампер. Один Ампер равен количеству заряда (Кулон, Кл), протекающему через заданную поверхность за единицу времени (секунда, с).</p>
 <p>В теории поля обычно интерес представляют процессы, протекающие в точке, а не в пределах некоторой большой области пространства.
 В этом случае удобно использовать другую, векторную характеристику электрического тока - <strong>плотность электрического тока</strong>.
 Вектор <strong>плотности электрического тока</strong> <span class="arithmatex">\(\vec{J}\)</span> характеризует распределение электрического тока по сечению <span class="arithmatex">\(S\)</span>. Единицы измерения - Ампер/метр<span class="arithmatex">\(^2\)</span>.</p>
-<p>Приращение тока <span class="arithmatex">\(\Delta I\)</span>, пересекающего поверхность через бесконечно малый элемент поверхности <span class="arithmatex">\(\Delta S\)</span>, нормальный к плотности тока, равно:</p>
+<p>Приращение силы тока <span class="arithmatex">\(\Delta I\)</span>, пересекающего бесконечно малый элемент поверхности <span class="arithmatex">\(\Delta S\)</span>, нормальный к плотности тока, равно:</p>
 <div class="arithmatex">\[
-\begin{equation}
 \Delta I=J_N \Delta S
-\end{equation}
 \]</div>
 <p>Если вектор плотности тока ориентирован под углом к элементу поверхности, то силу тока можно найти скалярно перемножив векторы <span class="arithmatex">\(\vec{J}\)</span> и <span class="arithmatex">\(\vec{S}\)</span>:</p>
 <div class="arithmatex">\[
-\begin{equation}
 \Delta I=\vec{J}_N \cdot \Delta \vec{S}
-\end{equation}
 \]</div>
 <p>Напомним, что скалярное произведение равно произведению модулей двух векторов и косинусу угла между этими векторами. Таким образом, если между векторами <span class="arithmatex">\(\vec{J}\)</span> и <span class="arithmatex">\(\vec{S}\)</span> угол <span class="arithmatex">\(90^\circ\)</span>, то ток через такую поверхность равен нулю.</p>
 <hr />
 <p>Вектор <span class="arithmatex">\(\vec{S}\)</span> направлен в ту же сторону, что и нормаль к той плоскости, которая является касательной к поверхности в рассматриваемой точке. Конечно, существуют две такие нормали. Мы будем рассматривать внешнюю нормаль, если не указано иное.</p>
 <hr />
 <p>Полный ток будет равен интегралу вектора <span class="arithmatex">\(\vec{J}\)</span> по поверхности <span class="arithmatex">\(S\)</span>:</p>
-<div class="arithmatex">\[\begin{equation}
+<div class="arithmatex">\[ 
 I=\int_{S} \vec{J} \cdot \partial\vec{S}  
-\end{equation} 
 \]</div>
 <p>Плотность тока в некоторой точке связана со скоростью зарядов. Рассмотрим область пространства, равномерно заполненную зарядами. Для простоты будем рассматривать электроны. Заряд электрона обозначим <span class="arithmatex">\(q_e\)</span>. Плотность электронов в единичном объеме равна <span class="arithmatex">\(N_e\)</span>. Выделим в данной области пространства куб объемом <span class="arithmatex">\(\Delta S \Delta L\)</span> (рис. 1 слева). Общий заряд электронов, которые находятся в этом кубе, можно вычислить,  умножив плотность электронов на их заряд и на объем выбранного куба - <span class="arithmatex">\(\Delta Q=q_e N_e \Delta S \Delta L\)</span>.  </p>
 <p><img alt="alt text" src="../../pics/plot.png" title="Title" /></p>
 <p><em>Рис. 1. Заряд <span class="arithmatex">\(\Delta Q= q_e N_e \Delta S \Delta L\)</span>, который перемещается на расстояние <span class="arithmatex">\(\Delta x\)</span> за время <span class="arithmatex">\(\Delta t\)</span> порождает ток с плотностью  <span class="arithmatex">\(\Delta t\)</span>  <span class="arithmatex">\(J_x = q_e N_e \upsilon_x\)</span></em>.</p>
 <p>Пусть выбранный куб с электронами существует в свободном пространстве. Рассмотрим их перемещение вдоль координаты <span class="arithmatex">\(x\)</span>. За время <span class="arithmatex">\(\Delta t\)</span> общий заряд <span class="arithmatex">\(\Delta Q\)</span> переместится на расстояние <span class="arithmatex">\(\Delta x\)</span>, как показано на рисунке 1 справа. Таким образом, заряд <span class="arithmatex">\(\Delta Q=q_e N_e \Delta S \Delta x\)</span> переместился через &ldquo;контрольную&rdquo; плоскость, которая ориентирована перпендикулярно направлению движения, за время <span class="arithmatex">\(\Delta t\)</span>. Тогда сила тока будет равна:</p>
-<div class="arithmatex">\[\begin{equation}
-\Delta I=\frac{\Delta Q}{\Delta t}=N_e q_e \Delta S \frac{\Delta x}{\Delta t}  
-\end{equation} 
+<div class="arithmatex">\[
+\Delta I=\frac{\Delta Q}{\Delta t}=N_e q_e \Delta S \frac{\Delta x}{\Delta t}   
 \]</div>
 <p>Устремим <span class="arithmatex">\(\Delta t\)</span> в знаменателе к нулю и по определению <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8">производной</a> получим:</p>
-<div class="arithmatex">\[\begin{equation}
-\Delta I=N_e q_e \Delta S \upsilon_x  
-\end{equation} 
+<div class="arithmatex">\[
+\Delta I=N_e q_e \Delta S \upsilon_x   
 \]</div>
-<p>,где <span class="arithmatex">\(\upsilon_x\)</span> — это <span class="arithmatex">\(x\)</span>-компонента скорости <span class="arithmatex">\(\vec{\upsilon}\)</span> по <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C">определению</a>. Тогда из связи между силой и плотностью тока (выражение 2)  получим выражение для <span class="arithmatex">\(x\)</span>-компоненты плотности тока:</p>
-<div class="arithmatex">\[\begin{equation}
-J_x=N_e q_e \upsilon_x  
-\end{equation} 
+<p>,где <span class="arithmatex">\(\upsilon_x\)</span> — это <span class="arithmatex">\(x\)</span>-компонента скорости <span class="arithmatex">\(\vec{\upsilon}\)</span> по <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C">определению</a>. Тогда из связи между приращением силы тока и плотностью тока получим выражение для <span class="arithmatex">\(x\)</span>-компоненты плотности тока:</p>
+<div class="arithmatex">\[
+J_x=N_e q_e \upsilon_x   
 \]</div>
 <p>И общее выражение для плотности тока:</p>
-<div class="arithmatex">\[\begin{equation}
-\vec{J}=N_e q_e \vec{\upsilon}  
-\end{equation} 
+<div class="arithmatex">\[
+\vec{J}=N_e q_e \vec{\upsilon}   
 \]</div>
-<blockquote>
-<p><strong><em>NOTE:</em></strong>  The note content.</p>
-</blockquote>
 <!---
 Electric current density refers to the amount of electric current flowing through a given area. It is a measure of the concentration of electric charge flowing through a material. Mathematically, electric current density is defined as the electric current per unit area of a cross-section of the material. Its SI unit is amperes per square meter (A/m²).
 
